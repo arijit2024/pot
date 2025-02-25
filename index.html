@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f7d794, #f94144, #90be6d);
+            color: #2c3e50;
+            line-height: 1.6;
+            overflow-y: auto;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            margin: 10px;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #e63946;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #457b9d;
+        }
+
+        .bio {
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .experience {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .experience h2 {
+            font-size: 1.5em;
+            color: #f4a261;
+            margin-bottom: 15px;
+        }
+
+        .experience ul {
+            list-style: none;
+            overflow: auto;
+            height: 150px;
+        }
+        .experience ul::-webkit-scrollbar {
+            width: 2px;
+            height: 8px; /* Set the height of the horizontal scrollbar */
+            background-color: #ffffff;
+        }
+
+        .experience ul::-webkit-scrollbar-thumb {
+            background-color: #e63946;
+            border-radius: 10px;
+        }
+        .experience li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .experience li:before {
+            content: "•";
+            color: #90be6d;
+            position: absolute;
+            left: 0;
+        }
+
+        .links a {
+            color: #1d3557;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .links a:hover {
+            color: #f94144;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .tagline {
+                font-size: 1em;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="pro.png" alt="Profile Picture" class="profile-img">
+        <h1>Arijit Sarkar</h1>
+        <p class="tagline">Creative Web Developer</p>
+        <p class="bio">
+            Hi there! I'm a vibrant developer who loves crafting colorful, user-friendly websites with a dash of
+            personality.
+        </p>
+        <div class="experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <strong>Senior Web Developer</strong> at Bright Designs (2022–Present)<br>
+                    Lead projects with bold UI/UX solutions and optimized code.
+                </li>
+                <li>
+                    <strong>Frontend Developer</strong> at ColorSplash Co. (2020–2022)<br>
+                    Built responsive, eye-catching websites for diverse clients.
+                </li>
+                <li>
+                    <strong>Junior Developer</strong> at PixelCraft (2018–2020)<br>
+                    Learned the ropes of web dev with a focus on creativity.
+                </li>
+            </ul>
+        </div>
+        <div class="links">
+            <a href="mailto:jane@example.com">Email</a>
+            <a href="https://linkedin.com/in/janesmith" target="_blank">LinkedIn</a>
+            <a href="https://calendly.com/arijitsarkar2111" target="_blank">Meeting</a>
+        </div>
+    </div>
+</body>
+
+</html>
